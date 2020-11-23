@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<conexion>
+	<Server>db4free.net</Server>
+	<Database>agendaproject</Database>
+	<Uid>bidaideacorreo@localhost</Uid>
+	<Pwd>bidaideacorreo</Pwd>
+</conexion>

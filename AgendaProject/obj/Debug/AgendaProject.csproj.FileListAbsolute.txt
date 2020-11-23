@@ -19,4 +19,9 @@ C:\Users\David\source\repos\AgendaProject\AgendaProject\bin\Debug\Ubiety.Dns.Cor
 C:\Users\David\source\repos\AgendaProject\AgendaProject\bin\Debug\Renci.SshNet.dll
 C:\Users\David\source\repos\AgendaProject\AgendaProject\bin\Debug\MySql.Data.xml
 C:\Users\David\source\repos\AgendaProject\AgendaProject\obj\Debug\AgendaProject.csproj.CopyComplete
+C:\Users\David\source\repos\AgendaProject\AgendaProject\bin\Debug\AgendaProject.exe.manifest
+C:\Users\David\source\repos\AgendaProject\AgendaProject\bin\Debug\AgendaProject.application
+C:\Users\David\source\repos\AgendaProject\AgendaProject\obj\Debug\AgendaProject.exe.manifest
+C:\Users\David\source\repos\AgendaProject\AgendaProject\obj\Debug\AgendaProject.application
+C:\Users\David\source\repos\AgendaProject\AgendaProject\bin\Debug\bin\Debug\conexion.xml
 C:\Users\David\source\repos\AgendaProject\AgendaProject\obj\Debug\AgendaProject.csprojAssemblyReference.cache

@@ -2,9 +2,12 @@
 using AgendaProject.modelo.utilidades;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 using System.Xml;
 
 namespace AgendaProject.dao.conexion
@@ -17,47 +20,49 @@ namespace AgendaProject.dao.conexion
 
             try
             {
-                using (XmlReader reader = XmlReader.Create("conexion.xml"))
-                {
-                    while (reader.Read())
-                    {
-                        if (reader.IsStartElement())
-                        {
-
-                            switch (reader.Name)
-                            {
-                                case "Server":
-                                    if (reader.Read())
+                                
+                                using (XmlReader reader = XmlReader.Create("conexion.xml"))
+                                {
+                                    while (reader.Read())
                                     {
-                                        con.Server = reader.Value.Trim();
-                                    }
-                                    break;
+                                        if (reader.IsStartElement())
+                                        {
 
-                                case "Database":
+                                            switch (reader.Name)
+                                            {
+                                                case "Server":
+                                                    if (reader.Read())
+                                                    {
+                                                        con.Server = reader.Value.Trim();
+                                                    }
+                                                    break;
 
-                                    if (reader.Read())
-                                    {
-                                        con.Database = reader.Value.Trim();
-                                    }
-                                    break;
-                                case "Uid":
+                                                case "Database":
 
-                                    if (reader.Read())
-                                    {
-                                        con.Uid = reader.Value.Trim();
-                                    }
-                                    break;
-                                case "Pwd":
+                                                    if (reader.Read())
+                                                    {
+                                                        con.Database = reader.Value.Trim();
+                                                    }
+                                                    break;
+                                                case "Uid":
 
-                                    if (reader.Read())
-                                    {
-                                        con.Pwd = reader.Value.Trim();
+                                                    if (reader.Read())
+                                                    {
+                                                        con.Uid = reader.Value.Trim();
+                                                    }
+                                                    break;
+                                                case "Pwd":
+
+                                                    if (reader.Read())
+                                                    {
+                                                        con.Pwd = reader.Value.Trim();
+                                                    }
+                                                    break;
+                                            }
+                                        }
                                     }
-                                    break;
-                            }
-                        }
-                    }
-                }
+                                }
+                            
             }
             catch (XmlException ex)
             {

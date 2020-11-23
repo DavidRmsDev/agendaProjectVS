@@ -3,6 +3,7 @@ using AgendaProject.modelo.utilidades;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,7 +40,7 @@ namespace AgendaProject.modelo.conexion
                 conexion.Close();
             }
             catch (Exception ex) { 
-                System.Windows.Forms.MessageBox.Show("Se ha perdido la conexión con el servidor", "Error de conexión");
+                System.Windows.Forms.MessageBox.Show("Se ha perdido la conexión con el servidor"+" "+ Application.StartupPath, "Error de conexión");
                 new Logcat(string.Join(" ", ex.Source, ex.ToString()));
             }
             return valido;
