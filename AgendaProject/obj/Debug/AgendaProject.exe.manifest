@@ -42,14 +42,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AgendaProject.exe" size="111528">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AgendaProject.exe" size="113064">
       <assemblyIdentity name="AgendaProject" version="1.0.0.0" publicKeyToken="288C006C8EDF143D" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>O4DZ5gJ8T75gZML6+4o9caJ94O37P5eoVUsOEVLWG8Y=</dsig:DigestValue>
+        <dsig:DigestValue>Hy+KU4lzmvzV7mFFp1HM5k3DEqy2mvg5SUhqoggrGzw=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

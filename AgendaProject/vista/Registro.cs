@@ -1,6 +1,7 @@
 ﻿using AgendaProject.dao.mysql;
 using AgendaProject.modelo.clases;
 using AgendaProject.modelo.conexion;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace AgendaProject
@@ -86,6 +87,23 @@ namespace AgendaProject
                         MessageBox.Show("Nombre de usuario no disponible, ya está registrado", "Error");
                 }
             }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ProcessStartInfo sInfo = new ProcessStartInfo("http://agendaproject.herokuapp.com/Privacidad");
+            linkLabel1.LinkVisited = true;
+            Process.Start(sInfo);
+        }
+
+        private void checkBox1_CheckedChanged(object sender, System.EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                button1.Enabled = true;
+            }
+            else
+                button1.Enabled = false;
         }
     }
 }

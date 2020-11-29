@@ -329,3 +329,74 @@ MySql.Data MySql.Data.MySqlClient.MySqlException (0x80004005): Reading from the 
    en MySql.Data.MySqlClient.MySqlConnection.Open()
    en AgendaProject.modelo.conexion.Conexion.ComprobarConexion() en C:\Users\David\source\repos\AgendaProject\AgendaProject\modelo\conexion\Conexion.cs:línea 38
 
+MySql.Data MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: Se han producido uno o varios errores. ---> System.Net.Sockets.SocketException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 127.0.0.1:3306
+   en System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   en System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   en System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   en System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   en System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   en MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   en MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Nº de excepción interna 0) System.Net.Sockets.SocketException (0x80004005): No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 127.0.0.1:3306
+   en System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   en System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   en System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   en System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)<---
+
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en AgendaProject.modelo.conexion.Conexion.ComprobarConexion() en C:\Users\David\source\repos\AgendaProject\AgendaProject\modelo\conexion\Conexion.cs:línea 38
+
+MySql.Data MySql.Data.MySqlClient.MySqlException (0x80004005): Unable to connect to any of the specified MySQL hosts. ---> System.AggregateException: Se han producido uno o varios errores. ---> System.Net.Sockets.SocketException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 127.0.0.1:3306
+   en System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   en System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   en System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   en System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+   --- Fin del seguimiento de la pila de la excepción interna ---
+   en System.Threading.Tasks.Task.ThrowIfExceptional(Boolean includeTaskCanceledExceptions)
+   en System.Threading.Tasks.Task.Wait(Int32 millisecondsTimeout, CancellationToken cancellationToken)
+   en MySql.Data.Common.StreamCreator.GetTcpStream(MySqlConnectionStringBuilder settings)
+   en MySql.Data.Common.StreamCreator.GetStream(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+---> (Nº de excepción interna 0) System.Net.Sockets.SocketException (0x80004005): No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión 127.0.0.1:3306
+   en System.Net.Sockets.Socket.InternalEndConnect(IAsyncResult asyncResult)
+   en System.Net.Sockets.Socket.EndConnect(IAsyncResult asyncResult)
+   en System.Net.Sockets.TcpClient.EndConnect(IAsyncResult asyncResult)
+   en System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)<---
+
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en AgendaProject.modelo.conexion.Conexion.ComprobarConexion() en C:\Users\David\source\repos\AgendaProject\AgendaProject\modelo\conexion\Conexion.cs:línea 38
+
+MySql.Data MySql.Data.MySqlClient.MySqlException (0x80004005): Authentication to host 'localhost' for user 'root' using method 'mysql_native_password' failed with message: Unknown database 'agendaproject' ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Unknown database 'agendaproject'
+   en MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   en MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   en MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.AuthenticationFailed(Exception ex)
+   en MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.ReadPacket()
+   en MySql.Data.MySqlClient.Authentication.MySqlAuthenticationPlugin.Authenticate(Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Authenticate(String authMethod, Boolean reset)
+   en MySql.Data.MySqlClient.NativeDriver.Open()
+   en MySql.Data.MySqlClient.Driver.Open()
+   en MySql.Data.MySqlClient.Driver.Create(MySqlConnectionStringBuilder settings)
+   en MySql.Data.MySqlClient.MySqlPool.CreateNewPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.GetPooledConnection()
+   en MySql.Data.MySqlClient.MySqlPool.TryToGetDriver()
+   en MySql.Data.MySqlClient.MySqlPool.GetConnection()
+   en MySql.Data.MySqlClient.MySqlConnection.Open()
+   en AgendaProject.modelo.conexion.Conexion.ComprobarConexion() en C:\Users\David\source\repos\AgendaProject\AgendaProject\modelo\conexion\Conexion.cs:línea 38
+

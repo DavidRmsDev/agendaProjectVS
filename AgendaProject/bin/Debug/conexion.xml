@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <conexion>
 	<Server>localhost</Server>
-	<Database>agenda</Database>
+	<Database>agendaproject</Database>
 	<Uid>root</Uid>
 	<Pwd></Pwd>
 </conexion>
